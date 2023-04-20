@@ -1,3 +1,10 @@
-h1, h2, h3, h4, h5, h6 {
+body {
+    font-family: 'Abolition';
+    font-size: var(--font-size-1);
+}
 
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abolition';
+    color: var(--color-light-100)
 }

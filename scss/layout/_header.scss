@@ -1,0 +1,18 @@
+.site-header {
+    width: 100%;
+    display: grid;
+    padding: 0 var(--gap-xl);
+    z-index: 990; //ligger över 999 lager
+    position: absolute;
+    margin-top: 50px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__branding {
+        display: block;
+    }
+}
