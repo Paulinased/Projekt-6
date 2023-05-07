@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 #map {
   width: 100%;
   height: 400px;
-  background-image: url("Bilder/Map.jpg");
+  background-image: url("Bilder/Map.png");
   background-size: cover;
   background-position: center;
 }
@@ -127,6 +127,9 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #2D343A;
   font-family: industry;
   font-size: 16px;
+}
+.footer__social {
+  margin-left: 200px;
 }
 .footer__copyright {
   color: white;
@@ -304,7 +307,6 @@ h1, h2, h3, h4, h5, h6 {
 .news {
   display: grid;
   grid-template-columns: var(--grid-container);
-  padding: var(--section-gap) 0;
 }
 .news__buttons {
   display: flex;
@@ -405,6 +407,82 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.7;
 }
 
+.banner {
+  min-height: 60vh;
+  display: grid;
+  padding: 60px;
+}
+.banner__text h2 {
+  color: white;
+  font-family: Abolition;
+  font-size: 88px;
+  min-width: 1276px;
+  font-weight: 300;
+  font-style: italic;
+  margin: 0;
+  padding-top: 80px;
+}
+.banner__text h3 {
+  color: rgba(255, 255, 255, 0.82);
+  font-family: Abolition;
+  font-size: 39px;
+  min-width: 1276px;
+  font-weight: 300;
+  font-style: italic;
+  margin: 0;
+}
+.banner__inner {
+  grid-template-rows: 100px 1fr 100px;
+  background: url(Bilder/Bg.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.banner__main {
+  grid-area: hero-main;
+  padding: var(--gap-m) var(--gap-xl);
+  position: relative;
+}
+.banner__content {
+  max-width: 50rem;
+  width: 100%;
+}
+
+.openinghours {
+  display: grid;
+  padding: 0 var(--gap-xl);
+  margin-top: 50px;
+}
+.openinghours__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.openinghours__header h4 {
+  margin-left: 32px;
+  font-family: Abolition;
+  font-size: 39px;
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(5, 132, 255, 0.64);
+}
+.openinghours__header h1 {
+  font-family: Abolition;
+  font-size: 61px;
+  font-style: italic;
+  font-weight: 300;
+  color: #3F4A53;
+}
+.openinghours__headertext {
+  display: flex;
+  align-items: baseline;
+}
+.openinghours__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
 .hero {
   background-color: var(--color-light);
   min-height: 100vh;
@@ -471,6 +549,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 100px;
   margin: 0;
   font-weight: lighter;
+  padding-bottom: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

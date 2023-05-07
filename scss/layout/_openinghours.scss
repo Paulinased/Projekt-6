@@ -1,0 +1,40 @@
+.openinghours {
+    display: grid;
+    padding: 0 var(--gap-xl);
+    margin-top: 50px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__header h4 {
+        margin-left: 32px;
+        font-family: Abolition;
+        font-size: 39px;
+        font-style: italic;
+        font-weight: 300;
+        color: rgba(5, 132, 255, 0.64);
+    }
+
+    &__header h1 {
+        font-family: Abolition;
+        font-size: 61px;
+        font-style: italic;
+        font-weight: 300;
+        color: #3F4A53;
+    }
+
+    &__headertext {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 60px;
+    }
+}

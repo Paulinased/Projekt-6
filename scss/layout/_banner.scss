@@ -1,0 +1,54 @@
+.banner {
+    min-height: 60vh;
+    display: grid;
+    padding: 60px;
+
+    &__text h2 {
+        color: white;
+        font-family: Abolition;
+        font-size: 88px;
+        min-width: 1276px;
+        font-weight: 300;
+        font-style: italic;
+        margin: 0;
+        padding-top: 80px;
+    }
+
+    &__text h3 {
+        color: rgba(255, 255, 255, 0.82);
+        font-family: Abolition;
+        font-size: 39px;
+        min-width: 1276px;
+        font-weight: 300;
+        font-style: italic;
+        margin: 0;
+    }
+
+    &__inner {
+        grid-template-rows: 100px 1fr 100px;
+
+        background: url(Bilder/Bg.png) no-repeat;
+        background-size: cover;
+        background-position: center center; //centrerar sig x och y, nu centreras rutan även om bredd på sida förändras
+        //min-width: 1276px;
+        //min-height: 370px;
+    }
+
+    &__main {
+        grid-area: hero-main;
+        padding: var(--gap-m) var(--gap-xl);
+        position: relative;
+    }
+
+    &__footer {
+
+    }
+
+    &__content {
+        max-width: 50rem;
+        width: 100%;
+    }
+}
+
+#BlueArrow {
+}
