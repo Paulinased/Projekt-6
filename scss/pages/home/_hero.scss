@@ -1,17 +1,19 @@
 .hero {
     background-color: var(--color-light);
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     padding: 32px;
     color: var(--color-light);
     font-style: italic;
 
+    background: url(Bilder/bgimage.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center; //centrerar sig x och y, nu centreras rutan även om bredd på sida förändras
+
 
     &__inner {
-        background-image: url('Bilder/bgimage.jpg');
         display: grid;
         grid-template-rows: 100px 1fr 100px;
-        //eller padding-top: 100px;
         grid-template-areas: 
         'hero-header'
         'hero-main'
@@ -40,8 +42,8 @@
         grid-area: hero-footer;
         display: flex;
         justify-content: space-between;
-        padding: 0 var(--gap-m);
-        position: relative; //Footer syns nu, doldes pga heriarki
+        align-items: center;
+        padding: 20px;
     }
 
     &__content {
@@ -51,13 +53,21 @@
     }
 
     &__readmore {
-        color: white;
         text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        margin-left: 30px;
     }
 
     .social {
-        white-space: nowrap;
-        //Hänvisar till närmsta nestlade föräldern   
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    .arrow {
+        margin-right: 20px;
     }
 }
 
@@ -66,7 +76,7 @@
     padding-right: var(--gap-m);
 
     &__title {
-        font-size: 5rem;
+        font-size: 100px;
         margin: 0;
         font-weight: lighter;
     }
