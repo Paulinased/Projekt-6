@@ -5,7 +5,6 @@
   }
 
   //Box 1
-  
   .box {
     width: 404px;
     height: 246px;
@@ -14,6 +13,31 @@
     padding-left: 50px;
     text-align: left;
     color: white;
+    position: relative;
+    transition: transform 0.4s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &__footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+    }
+  }
+
+.box::before { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 90px 90px 0 0;
+    border-color: transparent #0584FF transparent transparent;
   }
   
   .box h2 {
@@ -43,13 +67,7 @@
 
   }
 
-  #pil {
-    margin-top: -33px;
-    margin-left: 270px;
-  }
-
   // Box 2
-
   .box2 {
     width: 404px;
     height: 246px;
@@ -58,6 +76,24 @@
     padding-left: 50px;
     text-align: left;
     color: white;
+    position: relative;
+    transition: transform 0.4s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+  }
+
+  .box2::before { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 90px 90px 0 0;
+    border-color: transparent rgba(63, 74, 83, 0.21) transparent transparent;
   }
   
   .box2 h2 {
@@ -80,13 +116,7 @@
     color: #3F4A53;
   }
 
-  #pil2 {
-    margin-top: -20px;
-    margin-left: 270px;
-  }
-
   // Box 3
-
   .box3 {
     width: 404px;
     height: 246px;
@@ -95,6 +125,24 @@
     padding-left: 50px;
     text-align: left;
     color: white;
+    position: relative;
+    transition: transform 0.4s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+  }
+
+  .box3::before { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 90px 90px 0 0;
+    border-color: transparent rgba(63, 74, 83, 0.21) transparent transparent;
   }
   
   .box3 h2 {
@@ -117,8 +165,13 @@
     color: rgba(63, 74, 83, 0.53);
   }
 
-  #pil3 {
-    margin-top: -20px;
-    margin-left: 270px;
+  #selection_arrow {
+
+    transition: transform 0.4s ease; //Gör animationen mer följsam
+
+    &:hover {
+        transform: translateX(5px);
+    }
+
   }
 

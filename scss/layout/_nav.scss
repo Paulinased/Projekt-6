@@ -15,8 +15,12 @@
     &__link {
         font-style: italic;
         text-decoration: none;
-        color: var(--color-light);
-        font-size: var(--font-size-2);
+        color: white;
+        font-size: 25px;
+
+        &:hover {
+            color:#FD3E1D;
+        }
 }
 
     &__item {
@@ -26,7 +30,4 @@
         }
     }
 }
-
-.hamburger {
-    
-}
+  

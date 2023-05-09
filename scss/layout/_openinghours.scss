@@ -1,7 +1,6 @@
 .openinghours {
     display: grid;
     padding: 0 var(--gap-xl);
-    margin-top: 50px;
 
     &__header {
         display: flex;
@@ -35,6 +34,173 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 60px;
+        padding-bottom: 90px;
+    }
+
+//Reception-box
+.reception {
+        width: 425px;
+        height: 547px;
+        background-color: #3F4A53;
+        padding-top: 50px;
+        padding-left: 50px;
+        text-align: left;
+        color: white;
+        position: relative;
+
+        &__opening_hours {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            background-color: rgb(230, 230, 230, 0.07); //Rutans bakgrund
+            padding: 10px;
+            max-width: 320px;
+    
+            &--odd {
+                background-color: rgb(230, 230, 230, 0);
+            }
+        }
+
+        &__opening_hours_day {
+            font-weight: 700;
+            font-family: Industry;
+            font-size: 20px;
+            color: rgb(230, 230, 230, 0.90); //textens färg
+    
+            &--current {
+                    color: #FD3E1D;
+            }
+        }
+
+        &__opening_hours_hours {
+            font-weight: 400;
+            font-family: Industry;
+            font-size: 20px;
+            color: rgb(230, 230, 230, 0.90);
+    
+            &--current {
+                color: #FD3E1D;
+        }
+    }
+}
+
+//Triangel
+.reception::before { 
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 90px 90px 0;
+        border-color: transparent rgb(230, 230, 230, 0.21) transparent transparent;
+    }
+    
+.reception h2 {
+        font-size: 61px;
+        font-family: Abolition;
+        font-style: italic;
+        font-weight: 300;
+        margin: 0;
+        padding-bottom: 32px;
+    }
+
+.reception h4 {
+        font-size: 10.6px;
+        font-family: Industry;
+        font-weight: 300;
+        margin: 0;
+        padding-bottom: 32px;
+        padding-top: 5px;
+        color: rgb(230, 230, 230, 0.42)
+    }
+
+
+//Bastu-box
+.bastu {
+        width: 425px;
+        height: 547px;
+        background-color: white;
+        padding-top: 50px;
+        padding-left: 50px;
+        text-align: left;
+    }
+    
+.bastu h2 {
+        font-size: 61px;
+        font-family: Abolition;
+        font-style: italic;
+        font-weight: 300;
+        margin: 0;
+        color: #3F4A53;
+        padding-bottom: 32px;
+    }
+
+//Keycard-box
+.keycard {
+        width: 425px;
+        height: 547px;
+        background-color: white;
+        padding-top: 50px;
+        text-align: left;
+
+        &__opening_hours {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            background-color: rgba(63, 74, 83, 0.07); //Rutans bakgrund
+            background-size: auto;
+            padding: 10px;
+            max-width: 320px;
+    
+            &--odd {
+                background-color: rgb(230, 230, 230, 0);
+            }
+        }
+
+        &__opening_hours_day {
+            font-weight: 700;
+            font-family: Industry;
+            font-size: 20px;
+            color: #707070; //textens färg
+    
+            &--current {
+                    color: #0584FF;
+            }
+
+        }
+
+        &__opening_hours_hours {
+            font-weight: 400;
+            font-family: Industry;
+            font-size: 20px;
+            color: #707070;
+    
+            &--current {
+                color: #0584FF;
+        }
+    }
+}
+
+.keycard h2 {
+        font-size: 61px;
+        font-family: Abolition;
+        font-style: italic;
+        font-weight: 300;
+        margin: 0;
+        color: #3F4A53;
+        padding-bottom: 32px;
+    }
+      
+}
+
+#Knapp {
+    transition: transform 0.4s ease;
+
+    &:hover {
+        transform: scale(1.1);
     }
 }

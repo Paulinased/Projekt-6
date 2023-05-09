@@ -1,5 +1,5 @@
 .banner {
-    min-height: 60vh;
+    min-height: 70vh;
     display: grid;
     padding: 60px;
 
@@ -7,7 +7,7 @@
         color: white;
         font-family: Abolition;
         font-size: 88px;
-        min-width: 1276px;
+        min-width: 1000px;
         font-weight: 300;
         font-style: italic;
         margin: 0;
@@ -29,9 +29,22 @@
 
         background: url(Bilder/Bg.png) no-repeat;
         background-size: cover;
-        background-position: center center; //centrerar sig x och y, nu centreras rutan även om bredd på sida förändras
-        //min-width: 1276px;
-        //min-height: 370px;
+        background-position: center center;
+        position: relative;
+
+    }
+
+    //Triangel
+    &__inner::before { 
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 90px 90px 0 0;
+        border-color: transparent #0584FF transparent transparent;
     }
 
     &__main {
@@ -41,14 +54,14 @@
     }
 
     &__footer {
-
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
     }
 
     &__content {
         max-width: 50rem;
         width: 100%;
     }
-}
-
-#BlueArrow {
 }
